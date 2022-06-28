@@ -1,0 +1,51 @@
+html {
+  overflow-x: hidden;
+}
+
+#show {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+  z-index: 1;
+}
+
+#hide {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(-1000px);
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  transition: 1s;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.secOne {
+  width: 100%;
+  height: 80vh;
+}
+
+.secTwo {
+  position: absolute;
+  top: 0;
+  transition: 1s;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.secTwo .secUl {
+  width: 100%;
+  height: 90vh;
+}
+.secTwo .secUl li {
+  list-style: none;
+}
+.secTwo .secUl li a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
