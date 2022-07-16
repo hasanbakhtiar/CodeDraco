@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" /><button>action</button>
+    <ol class="todo"></ol>
+    <script>
+      document.querySelector("button").onclick = () => {
+        const a = document.createElement("li");
+        a.innerHTML = document.querySelector("input").value;
+        const b = document.querySelector(".todo");
+        b.appendChild(a);
+        document.querySelector("input").value = "";
+        a.onclick = () => {
+          a.style.textDecoration = "line-through";
+        };
+        a.ondblclick = () => {
+          a.remove();
+        };
+      };
+    </script>
+
+    <!-- <h1></h1>
+    <ol><li>mello</li><li class="a">hello</li><li>tello</li></ol> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
