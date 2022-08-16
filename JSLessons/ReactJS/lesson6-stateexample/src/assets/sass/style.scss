@@ -1,0 +1,9 @@
+.animate{
+    position: relative;
+    top: 0px;
+    animation: animating 1s 1;
+}
+@keyframes animating{
+    0%{top: 100px;}
+    100%{top:0px}
+}
