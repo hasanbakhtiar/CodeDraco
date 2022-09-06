@@ -1,0 +1,48 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+
+// body {
+//     background-color: #eee;
+
+// }
+
+#metn {
+    font-size: 14px;
+    text-align: justify;
+}
+
+#reng {
+    color: #83b735;
+}
+
+#kart {
+    background-color: white;
+
+    #metn {
+        display: none;
+    }
+
+    transition:1s;
+
+    &:hover {
+        width: 300px !important;
+border: 1px solid #eee !important;
+        #resm1 {
+            display: none;
+        }
+
+        #resm2 {
+            transition: 1s;
+            display: block !important;
+        }
+
+        #metn {
+            display: block;
+
+        }
+    }
+}
+
+#viewBtn {
+    background-color: #83b735;
+}
