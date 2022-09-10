@@ -1,5 +1,6 @@
 const cars = [
     {
+        id:1,
         img:'https://turbo.azstatic.com/uploads/f660x496/2021%2F10%2F25%2F18%2F12%2F55%2Fc4307338-9931-4a26-8fdf-1cdbe05c6673%2F53629_zyzgw1N41-Aw4T8R8aFbOQ.jpg',
         brand:"BMW",
         model: 'X5',
@@ -8,6 +9,7 @@ const cars = [
         color:'black'
     },
     {
+        id:2,
         img:'http://azcar.az/ru/wp-content/uploads/2021/04/Mercedes-Benz-S500-2021.jpg',
         brand:"Mercedes",
         model: 's500',
@@ -16,6 +18,7 @@ const cars = [
         color:'white'
     },
     {
+        id:3,
         img:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Audi_A8-D5.jpg/800px-Audi_A8-D5.jpg',
         brand:"Audi",
         model: 'A8',

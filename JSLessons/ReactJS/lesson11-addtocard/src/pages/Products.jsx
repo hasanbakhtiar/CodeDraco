@@ -13,6 +13,7 @@ const Products = () => {
             yearp={fd.year}
             pricep = {fd.price}
             colorp = {fd.color}
+            cars = {fd}
             key={i}
             />
         ))}

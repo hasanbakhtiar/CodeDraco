@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useCart } from 'react-use-cart'
 
 const Nav = () => {
+  const {totalItems} = useCart();
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
   <div className="container-fluid">
@@ -21,7 +23,7 @@ const Nav = () => {
       
       </ul>
       <div className="d-flex" >
-        <Link className="btn btn-outline-success" to="/cart">Cart(0)</Link>
+        <Link className="btn btn-outline-success" to="/cart">Cart({totalItems})</Link>
       </div>
     </div>
   </div>

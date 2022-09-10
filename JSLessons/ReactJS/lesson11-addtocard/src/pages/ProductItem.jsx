@@ -1,6 +1,8 @@
 import React from 'react'
+import { useCart } from 'react-use-cart'
 
-const ProductItem = ({photo,brandp,modelp,yearp,colorp,pricep}) => {
+const ProductItem = ({photo,brandp,modelp,yearp,colorp,pricep,cars}) => {
+  const {addItem} = useCart();
   return (
     <div className="card col-12 col-sm-6 col-md-3" >
   <img src={photo} className="card-img-top" alt={photo}/>
@@ -10,7 +12,8 @@ const ProductItem = ({photo,brandp,modelp,yearp,colorp,pricep}) => {
     <p className="card-text">{yearp}</p>
     <p className="card-text">{colorp}</p>
     <p className="card-text">{pricep}$</p>
-    <a href="#" className="btn btn-primary">add to cart</a>
+    <button  onClick={()=>(addItem(cars),alert("add successfull"))} className="btn btn-primary">
+      add to cart</button>
   </div>
 </div>
   )
